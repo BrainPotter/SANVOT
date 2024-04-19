@@ -5,7 +5,7 @@ This document contains detailed instructions for installing dependencies for SAN
 ### Requirments
 * Conda with Python 3.8
 * Nvidia GPU
-* PyTorch 1.10.1
+* PyTorch 1.8.1
 * pyyaml
 * yacs
 * tqdm
@@ -16,14 +16,14 @@ This document contains detailed instructions for installing dependencies for SAN
 
 #### Create environment and activate
 ```bash
-conda create --name sanvot python=3.7
+conda create --name sanvot python=3.8
 source activate sanvot
 ```
 
 #### Install numpy/pytorch/opencv
 ```bash
 conda install numpy
-conda install pytorch=1.10.1 torchvision cudatoolkit=10.1 -c pytorch
+conda install pytorch=1.8.1 torchvision cudatoolkit=10.1 -c pytorch
 pip install opencv-python
 ```
 
