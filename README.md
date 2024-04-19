@@ -16,10 +16,6 @@ Please find installation instructions in [`INSTALL.md`](INSTALL.md).
 export PYTHONPATH=/path/to/sanvot:$PYTHONPATH
 ```
 
-### Download models
-
-Download models in [Model Zoo](MODEL_ZOO.md) and put the `model.pth` in the correct directory in experiments
-
 ### Webcam demo
 
 ```bash
@@ -63,11 +59,3 @@ assume in tools
 
 ``` bash
 python demo.py 	 
-
-###  Training :wrench:
-
-See [TRAIN.md](TRAIN.md) for detailed instruction.
-
-### License
-
-This project is released under the [Apache 2.0 license](LICENSE). 
