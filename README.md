@@ -4,17 +4,23 @@ This probject hosts the code for implementing the SANVOT algorithm for visual tr
 
 # Abstract
 
-Real-time accurate visual object tracking (VOT) for quadrupedal robots is a great challenge when the scale or aspect
-ratio of moving objects vary. To overcome this challenge, existing methods apply anchor-based schemes that search a handcrafted
-space to locate moving objects. However, their performances are limited given complicated environments, especially when the
-speed of quadrupedal robots is relatively high. In this work, a newly designed VOT algorithm for a quadrupedal robot based on
-a Siamese network is introduced. First, a one-stage detector for locating moving objects is designed and applied. Then, position
-information of moving objects is fed into a newly designed Siamese adaptive network to estimate their scale and aspect ratio. 
-For regressing bounding boxes of a target object, a box adaptive head with an asymmetric convolution (ACM) layer is newly proposed. 
-The proposed approach is successfully used on a quadrupedal robot, which can accurately track a specific moving object in real-world 
-complicated scenes.
+Real-time accurate visual object tracking (VOT) for quadrupedal robots is a great challenge when the scale or aspect ratio of moving objects vary. To overcome this challenge, existing methods apply anchor-based schemes that search a handcrafted space to locate moving objects. However, their performances are limited given complicated environments, especially when the speed of quadrupedal robots is relatively high. In this work, a newly designed VOT algorithm for a quadrupedal robot based on a Siamese network is introduced. First, a one-stage detector for locating moving objects is designed and applied. Then, position information of moving objects is fed into a newly designed Siamese adaptive network to estimate their scale and aspect ratio. For regressing bounding boxes of a target object, a box adaptive head with an asymmetric convolution (ACM) layer is newly proposed. The proposed approach is successfully used on a quadrupedal robot, which can accurately track a specific moving object in real-world  complicated scenes.
 
 The code based on the [PySOT](https://github.com/STVIR/pysot) and [SiamBAN](https://github.com/hqucv/siamban). Thanks to their great works.
+
+## 1.Network Structure
+
+### 1.1 Structure of the ConsistencySOD:
+
+<img src="graph/pic1.jpg" width="720" height="360"/>
+
+### 1.2 Detection Results on the OTB100 Dataset:
+
+<img src="graph/pic2.jpg" width="660" height="330"/>
+
+### 1.3 Partial Detection Results on the real-world scenarios:
+
+<img src="graph/pic3.jpg" width="660" height="330"/>
 
 ## Installation
 
@@ -71,13 +77,17 @@ assume in tools
 
 ``` bash
 python demo.py 	 
-
-### If you are interested in this paper, please cite
-
+```
+## If you are interested in this paper, please cite
+```
 @article{cao2025siamese,
   title={Siamese Adaptive Network-Based Accurate and Robust Visual Object Tracking Algorithm for Quadrupedal Robots},
   author={Cao, Zhengcai and Li, Junnian and Shao, Shibo and Zhang, Dong and Zhou, MengChu},
   journal={IEEE Transactions on Cybernetics},
   year={2025},
+  volume={55},
+  number={3},
+  pages={1264--1276},
   publisher={IEEE}
 }
+```
