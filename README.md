@@ -2,7 +2,19 @@
 
 This probject hosts the code for implementing the SANVOT algorithm for visual tracking on a Unitree quadruped robot.
 
-The code based on the [PySOT](https://github.com/STVIR/pysot) and [SiamBAN](https://github.com/hqucv/siamban).
+# Abstract
+
+Real-time accurate visual object tracking (VOT) for quadrupedal robots is a great challenge when the scale or aspect
+ratio of moving objects vary. To overcome this challenge, existing methods apply anchor-based schemes that search a handcrafted
+space to locate moving objects. However, their performances are limited given complicated environments, especially when the
+speed of quadrupedal robots is relatively high. In this work, a newly designed VOT algorithm for a quadrupedal robot based on
+a Siamese network is introduced. First, a one-stage detector for locating moving objects is designed and applied. Then, position
+information of moving objects is fed into a newly designed Siamese adaptive network to estimate their scale and aspect ratio. 
+For regressing bounding boxes of a target object, a box adaptive head with an asymmetric convolution (ACM) layer is newly proposed. 
+The proposed approach is successfully used on a quadrupedal robot, which can accurately track a specific moving object in real-world 
+complicated scenes.
+
+The code based on the [PySOT](https://github.com/STVIR/pysot) and [SiamBAN](https://github.com/hqucv/siamban). Thanks to their great works.
 
 ## Installation
 
@@ -59,3 +71,13 @@ assume in tools
 
 ``` bash
 python demo.py 	 
+
+### If you are interested in this paper, please cite
+
+@article{cao2025siamese,
+  title={Siamese Adaptive Network-Based Accurate and Robust Visual Object Tracking Algorithm for Quadrupedal Robots},
+  author={Cao, Zhengcai and Li, Junnian and Shao, Shibo and Zhang, Dong and Zhou, MengChu},
+  journal={IEEE Transactions on Cybernetics},
+  year={2025},
+  publisher={IEEE}
+}
