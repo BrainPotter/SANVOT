@@ -8,19 +8,19 @@ Real-time accurate visual object tracking (VOT) for quadrupedal robots is a grea
 
 The code based on the [PySOT](https://github.com/STVIR/pysot) and [SiamBAN](https://github.com/hqucv/siamban). Thanks to their great works.
 
-## 1.Network Structure
+## Network Structure
 
-### 1.1 Structure of the ConsistencySOD:
+### Structure of the ConsistencySOD:
 
-<img src="graph/pic1.jpg" width="720" height="360"/>
+<img src="graph/pic1.jpg" width="720" height="480"/>
 
-### 1.2 Detection Results on the OTB100 Dataset:
+### Detection Results on the OTB100 Dataset:
 
-<img src="graph/pic2.jpg" width="660" height="330"/>
+<img src="graph/pic2.jpg" width="720" height="480"/>
 
-### 1.3 Partial Detection Results on the real-world scenarios:
+### Partial Detection Results on the real-world scenarios:
 
-<img src="graph/pic3.jpg" width="660" height="330"/>
+<img src="graph/pic3.jpg" width="720" height="360"/>
 
 ## Installation
 
