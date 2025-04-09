@@ -11,7 +11,7 @@ The code based on the [PySOT](https://github.com/STVIR/pysot) and [SiamBAN](http
 
 ## Network Structure
 
-### Structure of the ConsistencySOD:
+### Structure of the SANVOT:
 
 <img src="graph/pic1.jpg" width="720" height="480"/>
 
