@@ -1,6 +1,7 @@
 # SANVOT
 
-This probject hosts the code for implementing the SANVOT algorithm for visual tracking on a Unitree quadruped robot.
+This probject hosts the code for implementing our T-CYB paper “Siamese Adaptive Network-Based Accurate and Robust Visual Object Tracking Algorithm for
+Quadrupedal Robots” for visual tracking on a Unitree quadruped robot.
 
 # Abstract
 
@@ -79,7 +80,7 @@ assume in tools
 python demo.py 	 
 ```
 ## If you are interested in this paper, please cite
-```
+```BibTeX
 @article{cao2025siamese,
   title={Siamese Adaptive Network-Based Accurate and Robust Visual Object Tracking Algorithm for Quadrupedal Robots},
   author={Cao, Zhengcai and Li, Junnian and Shao, Shibo and Zhang, Dong and Zhou, MengChu},
