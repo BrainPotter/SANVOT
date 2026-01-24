@@ -48,6 +48,10 @@ python tools/demo.py \
     # --video demo/bag.avi # (in case you don't have webcam)
 ```
 
+### Download DOG datasets
+
+DOG datasets can be downloaded from [here] (https://pan.baidu.com/s/13GiXoUImeztNCy5IjjpJbw?pwd=uuci), extraction code: `uuci`. 
+
 ### Download testing datasets
 
 Download datasets and put them into `testing_dataset` directory. Jsons of commonly used datasets can be downloaded from [here](https://drive.google.com/drive/folders/10cfXjwQQBQeu48XMf2xc_W1LucpistPI) or [here](https://pan.baidu.com/s/1et_3n25ACXIkH063CCPOQQ), extraction code: `8fju`. If you want to test tracker on new dataset, please refer to [pysot-toolkit](https://github.com/StrangerZhang/pysot-toolkit) to setting `testing_dataset`. 
